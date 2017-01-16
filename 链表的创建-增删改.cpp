@@ -109,6 +109,7 @@ void delete_node(PNode PHead,int pos,int * val)
 			r=p->PNext;
 			t->PNext=p->PNext->PNext;
 			free(r);
+			r=NULL;
 			//exit(0);
 			return;
 		}
